@@ -17,11 +17,11 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ##Assignment Outline
 
-" 1. Merges the training and the test sets to create one data set.
+1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 3. Uses descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive activity names. 
-5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject."
+5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## (1) Completed Data Set
 My complete data set has 10299 observations and 14 variables. The first variable (column)
@@ -30,12 +30,14 @@ The second variable is the `activity` being preformed. The next 12 are variables
 means and standard deviations from measurements using the accelerometers from the 
 Samsung Galaxy S smartphone. See (2) for the choice of variables.
 
+This dataset is names `completed2`
+
 ## (2) Choice of Variables
 I picked the following 6 mean and 6 corresponding standard deviation values from the
 x datasets. I did this for simplicity and due to a lack of direction on which to pick.
 The columns I picked were seperated by other columns so that I could make sure I was
 able to retrieve nonadjacent columns.
-"tBodyAcc-mean()-X
+`tBodyAcc-mean()-X
 tBodyAcc-mean()-Y
 tBodyAcc-mean()-Z
 tBodyAcc-std()-X     
@@ -46,13 +48,13 @@ tBodyAccJerk-mean()-Y
 tBodyAccJerk-mean()-Z
 tBodyAccJerk-std()-X
 tBodyAccJerk-std()-Y
-tBodyAccJerk-std()-Z"
+tBodyAccJerk-std()-Z`
 
 These names were altered to: 
-           "tBodyAccMeanX", "tBodyAccMeanY", "tBodyAccMeanZ",
-           "tBodyAccStdX", "tBodyAccStdY", "tBodyAccStdZ",
-           "tBodyAccJerkMeanX", "tBodyAccJerkMeanY", "tBodyAccJerkMeanZ",
-           "tBodyAccJerkStdX",  "tBodyAccJerkStdY",  "tBodyAccJerkStdZ"
+           `tBodyAccMeanX, tBodyAccMeanY, tBodyAccMeanZ,
+            tBodyAccStdX, tBodyAccStdY, tBodyAccStdZ,
+            tBodyAccJerkMeanX, tBodyAccJerkMeanY, tBodyAccJerkMeanZ,
+            tBodyAccJerkStdX,  tBodyAccJerkStdY,  tBodyAccJerkStdZ`
            
 ## (3) Descriptive Activity Names
 The activities were all renamed using appropriate lower case names corresponding
